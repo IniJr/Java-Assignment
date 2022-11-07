@@ -2,6 +2,13 @@
 
 ## Compare with other sorts we have learned, and give a conclusion
 
+* Bubble sort seems to be the slowest
+* Insertion sort is fast
+* Shell sort comes next to insertion
+
+<img width="1280" alt="Screen Shot 2022-11-07 at 23 05 09" src="https://user-images.githubusercontent.com/26523968/200425331-92950449-8151-469f-9570-0e19f546dd0f.png">
+
+
 ## Can you create a new method and can do merge without initiating a new list?
 Yes, this variant of merge implementation is popularly known as inplace merge sort
 
@@ -63,7 +70,7 @@ Yes, this variant of merge implementation is popularly known as inplace merge so
 ```
 
 ## Compare the runtime performance between the new merge implementation and the original one, which is more efficient?
-The original one
+The new implementation one
 <img width="1280" alt="Screen Shot 2022-11-07 at 23 05 09" src="https://user-images.githubusercontent.com/26523968/200425331-92950449-8151-469f-9570-0e19f546dd0f.png">
 
 ## Give a conclusion about what kinds of operations has the most significant impact on runtime performance.
