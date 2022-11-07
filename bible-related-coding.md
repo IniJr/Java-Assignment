@@ -1,10 +1,9 @@
 # Bible Reading Coding
 
-## From previous homework result, You can see it doesn't take to many years to achieve the commandment of Jesus. Why more than 2000 years has past, only less than one third of the population are Christian (2.3 billion in total)? Can you introduce a new condition or variable to simulate the real world model based on the assumptions in question 3? Explain what assumptions you introduced.
+## From previous homework result, You can see it doesn't take too many years to achieve the commandment of Jesus. Why more than 2000 years has past, only less than one third of the population are Christian (2.3 billion in total)? Can you introduce a new condition or variable to simulate the real world model based on the assumptions in question 3? Explain what assumptions you introduced.
 
-* Bubble sort seems to be the slowest
-* Insertion sort is fast
-* Shell sort comes next to insertion
+### Condition Introduced
+`That a disciple can either convert a random number betwwen 0 and 2 of disciples in every 3 years. `
 
 <img width="1280" alt="Screen Shot 2022-11-07 at 23 05 09" src="https://user-images.githubusercontent.com/26523968/200425331-92950449-8151-469f-9570-0e19f546dd0f.png">
 
@@ -19,13 +18,12 @@
 * The growth rate of discipleship is 2x per 3 years
 
 ```
-int population = 7700000000
-int numberOfDisciples = 13
-int assignedDiscipleshipSlots = population/2
-int i = 0
-while(numberOfDisciples < assignedDiscipleshipSlots){
-  numberOfDisciples += numberOfDisciples * 2 
-  i += 3
+int population = 7700000000;
+int numberOfDisciples = 13;
+int i = 0;
+while(numberOfDisciples < population){
+  numberOfDisciples += numberOfDisciples * 2;
+  i += 3;
 }
 System.out.println("It will take "+i+" years to make every human a disciple of Jesus");
 ```
