@@ -13,4 +13,4 @@ Iteration
 
 ##What kind of Operations in merge sort take the largest amount of time?
 
-##Using times of swap to estimate runtime performance of sorting algorithms
+##Using times of swap to estimate runtime performance of sorting algorithms.
