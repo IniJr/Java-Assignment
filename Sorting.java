@@ -189,8 +189,8 @@ class Sorting{
             int mid = left + (right - left) / 2;
   
             // Sort first and second halves
-            mergeSort(array, left, mid);
-            mergeSort(array, mid + 1, right);
+            inplaceMergeSort(array, left, mid);
+            inplaceMergeSort(array, mid + 1, right);
   
             inplaceMerge(array, left, mid, right);
         }
@@ -200,7 +200,7 @@ class Sorting{
     public static void main(String[] args){
         // create an array
         Long startAt, endedAt, timeDifference;
-        int[] numbers = new Random().ints(1, 2147483647).limit(10000).toArray();
+        int[] numbers = new Random().ints(1, 2147483647).limit(100000).toArray();
  
         // call the method bubbleSort using object bs
         // pass the array as the method argument
