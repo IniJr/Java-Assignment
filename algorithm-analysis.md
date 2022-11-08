@@ -80,7 +80,7 @@ Yes, this variant of merge implementation is popularly known as inplace merge so
 
 ```
 
-    static void inplaceMerge(int arr[], int start, int mid, int end)
+    void inplaceMerge(int arr[], int start, int mid, int end)
     {
         int start2 = mid + 1;
   
@@ -118,7 +118,7 @@ Yes, this variant of merge implementation is popularly known as inplace merge so
     }
 
     // Divide the array into two sub arrays, sort them and merge them
-    static int[] inplaceMergeSort(int array[], int left, int right) {
+    int[] inplaceMergeSort(int array[], int left, int right) {
         if (left < right) {
   
             // Same as (l + r) / 2, but avoids overflow
