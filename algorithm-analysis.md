@@ -191,7 +191,9 @@ Time Difference for Inplace Merge Sort: 74 milliseconds
 
 ## Run sorts on array to prove implementation is working
 Result of running implementation on an array of 10 integers
-<img width="1280" alt="Screen Shot 2022-11-07 at 23 05 09" src="https://user-images.githubusercontent.com/26523968/200425331-92950449-8151-469f-9570-0e19f546dd0f.png">
+
+<img width="1280" alt="Screen Shot 2022-11-08 at 11 58 08" src="https://user-images.githubusercontent.com/26523968/200549701-2eec3f0c-24e9-4305-8330-4c2dede41bc1.png">
+
 
 ## Using times of swap to estimate runtime performance of sorting algorithms
 * Bubble sort: The total number of swaps is n * (n – 1) /2. This is O(n^2) worst case 
