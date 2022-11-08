@@ -136,8 +136,50 @@ Yes, this variant of merge implementation is popularly known as inplace merge so
 ```
 
 ## Compare the runtime performance between the new merge implementation and the original one, which is more efficient?
-The new implementation seems to be more efficient
-<img width="1280" alt="Screen Shot 2022-11-07 at 23 05 09" src="https://user-images.githubusercontent.com/26523968/200425331-92950449-8151-469f-9570-0e19f546dd0f.png">
+
+```
+incified@Iniobongs-MBP Java Assignment % javac Sorting.java
+incified@Iniobongs-MBP Java Assignment % java Sorting     
+Time Difference for Merge Sort: 4 milliseconds
+Time Difference for Inplace Merge Sort: 104 milliseconds
+```
+
+```
+incified@Iniobongs-MBP Java Assignment % javac Sorting.java
+incified@Iniobongs-MBP Java Assignment % java Sorting     
+Time Difference for Merge Sort: 62 milliseconds
+Time Difference for Inplace Merge Sort: 98 milliseconds
+```
+
+```
+incified@Iniobongs-MBP Java Assignment % javac Sorting.java
+incified@Iniobongs-MBP Java Assignment % java Sorting      
+Time Difference for Merge Sort: 3 milliseconds
+Time Difference for Inplace Merge Sort: 92 milliseconds
+```
+
+```
+incified@Iniobongs-MBP Java Assignment % javac Sorting.java
+incified@Iniobongs-MBP Java Assignment % java Sorting      
+Time Difference for Merge Sort: 16 milliseconds
+Time Difference for Inplace Merge Sort: 57 milliseconds
+```
+
+```
+incified@Iniobongs-MBP Java Assignment % javac Sorting.java
+incified@Iniobongs-MBP Java Assignment % java Sorting   
+Time Difference for Merge Sort: 6 milliseconds
+Time Difference for Inplace Merge Sort: 69 milliseconds
+```
+
+```
+incified@Iniobongs-MBP Java Assignment % javac Sorting.java
+incified@Iniobongs-MBP Java Assignment % java Sorting     
+Time Difference for Merge Sort: 4 milliseconds
+Time Difference for Inplace Merge Sort: 74 milliseconds
+```
+
+<img width="1280" alt="Screen Shot 2022-11-08 at 12 01 02" src="https://user-images.githubusercontent.com/26523968/200548927-bd4822d9-dd94-4928-a92a-6adbac414cdb.png">
 
 ## Give a conclusion about what kinds of operations has the most significant impact on runtime performance.
 `Partitioning has the most significant impact on runtime performance with regards to space and time`
