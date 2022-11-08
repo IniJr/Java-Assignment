@@ -2,9 +2,11 @@
 
 ## Compare with other sorts we have learned, and give a conclusion
 
-* Bubble sort seems to be the slowest
-* Insertion sort is fast
-* Shell sort comes next to insertion
+The sorting program was executed 6 times and the following conclusions were deduced:
+
+* Bubble sort was the slowest of all executions
+* Shell sort and Merge sort seemed to be the fastest but anytime shell sort was faster than merge, the time difference was more significant than when merge was faster
+* Insertion sort is faster than selection sort
 
 ```
 incified@Iniobongs-MBP Java Assignment % javac Sorting.java
@@ -136,6 +138,8 @@ Yes, this variant of merge implementation is popularly known as inplace merge so
 ```
 
 ## Compare the runtime performance between the new merge implementation and the original one, which is more efficient?
+
+The sorting program was executed 6 times and it was clear that merge sort is faster than in-place merge sort for all executions
 
 ```
 incified@Iniobongs-MBP Java Assignment % javac Sorting.java
