@@ -3,7 +3,8 @@ import java.util.Random;
 
 class Sorting{
     // method to perform bubble sort
-    static int[] bubbleSort(int array[]) {
+    int[] numbers = new Random().ints(1, 2147483647).limit(10000).toArray();
+    int[] bubbleSort(int array[]) {
         int size = array.length;
         // run loops two times
         // first loop access each element of the array
@@ -23,7 +24,7 @@ class Sorting{
         return array;
     }
 
-    static int[] selectionSort(int array[]) {
+    int[] selectionSort(int array[]) {
         int size = array.length;
         for (int step = 0; step < size - 1; step++) {
             int min_idx = step;
@@ -42,7 +43,7 @@ class Sorting{
         return array;
     }
 
-    static int[] insertionSort(int array[]) {
+    int[] insertionSort(int array[]) {
         int size = array.length;
         for (int step = 1; step < size; step++) {
             int key = array[step];
@@ -60,7 +61,7 @@ class Sorting{
         return array;
     }
 
-    public static int[] shellSort(int array[]) {
+    public int[] shellSort(int array[]) {
         int n = array.length;
         for (int gap = n / 2; gap > 0; gap /= 2) {
             for (int i = gap; i < n; i++) {
@@ -165,7 +166,7 @@ class Sorting{
     }
 
     // Divide the array into two sub arrays, sort them and merge them
-    static int[] mergeSort(int array[], int left, int right) {
+    int[] mergeSort(int array[], int left, int right) {
         if (left < right) {
             // m is the point where the array is divided into two sub arrays
             int mid = (left + right) / 2;
@@ -181,7 +182,7 @@ class Sorting{
     }
 
     // Divide the array into two sub arrays, sort them and merge them
-    static int[] inplaceMergeSort(int array[], int left, int right) {
+    int[] inplaceMergeSort(int array[], int left, int right) {
         if (left < right) {
   
             // Same as (l + r) / 2, but avoids overflow
@@ -198,61 +199,88 @@ class Sorting{
     }
 
     public static void main(String[] args){
-        // create an array
+
+        Sorting sorting = new Sorting();
         Long startAt, endedAt, timeDifference;
-        int[] numbers = new Random().ints(1, 2147483647).limit(100000).toArray();
- 
-        // call the method bubbleSort using object bs
-        // pass the array as the method argument
+
+        int[] numbers = sorting.numbers;
+
         startAt = System.currentTimeMillis();
-        int[] bubbleSortedNumbers = bubbleSort(numbers);
+        
+        int[] bubbleSortedNumbers = sorting.bubbleSort(numbers.clone());
+        
         endedAt = System.currentTimeMillis();
         timeDifference = endedAt - startAt;
-        System.out.println("Bubble Sorted Array in Ascending Order:");
-        //System.out.println(Arrays.toString(bubbleSortedNumbers));
+        
+        // System.out.println("Numbers to be sorted:");
+        // System.out.println(Arrays.toString(numbers.clone()));
+        // System.out.println("Bubble Sorted Array in Ascending Order:");
+        // System.out.println(Arrays.toString(bubbleSortedNumbers));
         System.out.println("Time Difference for Bubble Sort: "+timeDifference+" milliseconds");
  
- 
         startAt = System.currentTimeMillis();
-        int[] selectionSortedNumbers = selectionSort(numbers);
+        
+        int[] selectionSortedNumbers = sorting.selectionSort(numbers.clone());
+        
         endedAt = System.currentTimeMillis();
         timeDifference = endedAt - startAt;
-        System.out.println("Selection Sorted Array in Ascending Order:");
-        //System.out.println(Arrays.toString(selectionSortedNumbers));
+        
+        // System.out.println("Numbers to be sorted:");
+        // System.out.println(Arrays.toString(numbers.clone()));
+        // System.out.println("Selection Sorted Array in Ascending Order:");
+        // System.out.println(Arrays.toString(selectionSortedNumbers));
         System.out.println("Time Difference for Selection Sort: "+timeDifference+" milliseconds");
  
         startAt = System.currentTimeMillis();
-        int[] insertionSortedNumbers = insertionSort(numbers);
+        
+        int[] insertionSortedNumbers = sorting.insertionSort(numbers.clone());
+        
         endedAt = System.currentTimeMillis();
         timeDifference = endedAt - startAt;
-        System.out.println("Insertion Sorted Array in Ascending Order:");
-        //System.out.println(Arrays.toString(insertionSortedNumbers));
+        
+        // System.out.println("Numbers to be sorted:");
+        // System.out.println(Arrays.toString(numbers.clone()));
+        // System.out.println("Insertion Sorted Array in Ascending Order:");
+        // System.out.println(Arrays.toString(insertionSortedNumbers));
         System.out.println("Time Difference for Insertion Sort: "+timeDifference+" milliseconds");
  
         startAt = System.currentTimeMillis();
-        int[] shellSortedNumbers = shellSort(numbers);
+        
+        int[] shellSortedNumbers = sorting.shellSort(numbers.clone());
+        
         endedAt = System.currentTimeMillis();
         timeDifference = endedAt - startAt;
-        System.out.println("Shell Sorted Array in Ascending Order:");
-        //System.out.println(Arrays.toString(shellSortedNumbers));
+        
+        // System.out.println("Numbers to be sorted:");
+        // System.out.println(Arrays.toString(numbers.clone()));
+        // System.out.println("Shell Sorted Array in Ascending Order:");
+        // System.out.println(Arrays.toString(shellSortedNumbers));
         System.out.println("Time Difference for Shell Sort: "+timeDifference+" milliseconds");
 
         startAt = System.currentTimeMillis();
-        int[] mergeSortedNumbers = mergeSort(numbers, 0, numbers.length - 1);
+        
+        int[] mergeSortedNumbers = sorting.mergeSort(numbers.clone(), 0, numbers.clone().length - 1);
+        
         endedAt = System.currentTimeMillis();
         timeDifference = endedAt - startAt;
-        System.out.println("Merge Sorted Array in Ascending Order:");
-        //System.out.println(Arrays.toString(mergeSortedNumbers));
+        
+        // System.out.println("Numbers to be sorted:");
+        // System.out.println(Arrays.toString(numbers.clone()));
+        // System.out.println("Merge Sorted Array in Ascending Order:");
+        // System.out.println(Arrays.toString(mergeSortedNumbers));
         System.out.println("Time Difference for Merge Sort: "+timeDifference+" milliseconds");
 
         startAt = System.currentTimeMillis();
-        int[] inplaceMergeSortedNumbers = inplaceMergeSort(numbers, 0, numbers.length - 1);
+        
+        int[] inplaceMergeSortedNumbers = sorting.inplaceMergeSort(numbers.clone(), 0, numbers.clone().length - 1);
+        
         endedAt = System.currentTimeMillis();
         timeDifference = endedAt - startAt;
-        System.out.println("Inplace Merge Sorted Array in Ascending Order:");
-        //System.out.println(Arrays.toString(inplaceMergeSortedNumbers));
-        System.out.println("Time Difference for Inplace Merge Sort: "+timeDifference+" milliseconds");
-
         
+        // System.out.println("Numbers to be sorted:");
+        // System.out.println(Arrays.toString(numbers.clone()));
+        // System.out.println("Inplace Merge Sorted Array in Ascending Order:");
+        // System.out.println(Arrays.toString(inplaceMergeSortedNumbers));
+        System.out.println("Time Difference for Inplace Merge Sort: "+timeDifference+" milliseconds");       
     }
 }
