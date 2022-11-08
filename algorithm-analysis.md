@@ -87,7 +87,7 @@ Result of running implementation on an array of 10 integers
 
 ## Using times of swap to estimate runtime performance of sorting algorithms
 * Bubble sort: The total number of swaps is n * (n – 1) /2. This is O(n^2) worst case 
-* Insertion sort: The number of swaps for insertion sort is n - 1 where n is the number of comparisons. This is 0 in the best case, and O(n2) in the average and worst cases.
+* Insertion sort: The number of swaps for insertion sort is n - 1 where n is the number of comparisons. This is 0 in the best case, and O(n^2) in the average and worst cases.
 * Merge sort: Merge sort Since each step requires O(n)
 * Selection sort: Just like in bubble sort, the total number of swaps is n * (n – 1) /2. This is O(n^2) worst case 
-* Shell sort: The number of swaps for shell sort is similar to insertion sort n - 1 where n is the number of comparisons. This is 0 in the best case, and O(n2) in the average and worst cases.
+* Shell sort: The number of swaps for shell sort is similar to insertion sort n - 1 where n is the number of comparisons. This is 0 in the best case, and O(n^2) in the average and worst cases.
