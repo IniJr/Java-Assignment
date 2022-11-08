@@ -17,7 +17,7 @@ Time Difference for Merge Sort: 4 milliseconds
 Time Difference for Inplace Merge Sort: 104 milliseconds
 ```
 
-````
+```
 incified@Iniobongs-MBP Java Assignment % javac Sorting.java
 incified@Iniobongs-MBP Java Assignment % java Sorting      
 Time Difference for Bubble Sort: 194 milliseconds
@@ -28,7 +28,7 @@ Time Difference for Merge Sort: 62 milliseconds
 Time Difference for Inplace Merge Sort: 98 milliseconds
 ```
 
-````
+```
 incified@Iniobongs-MBP Java Assignment % javac Sorting.java
 incified@Iniobongs-MBP Java Assignment % java Sorting      
 Time Difference for Bubble Sort: 174 milliseconds
