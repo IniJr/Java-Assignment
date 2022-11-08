@@ -126,8 +126,8 @@ Yes, this variant of merge implementation is popularly known as inplace merge so
             int mid = left + (right - left) / 2;
   
             // Sort first and second halves
-            mergeSort(array, left, mid);
-            mergeSort(array, mid + 1, right);
+            inplaceMergeSort(array, left, mid);
+            inplaceMergeSort(array, mid + 1, right);
   
             inplaceMerge(array, left, mid, right);
         }
